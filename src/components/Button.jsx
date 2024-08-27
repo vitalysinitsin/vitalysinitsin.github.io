@@ -1,9 +1,15 @@
 import classNames from "classnames";
 
-const DEFAULT = "h-8 bg-purple-500 p-1 text-center";
-
-function Button({ className, children }) {
-  return <button className={classNames(DEFAULT, className)}>{children}</button>;
+function Button({ className, children, buttonStyle = "default" }) {
+  const options = {
+    default: "flex items-center h-8 bg-blue-400 p-2 rounded-sm truncate",
+    plain: "flex items-center truncate",
+  };
+  return (
+    <button className={classNames(options[buttonStyle], className)}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;
