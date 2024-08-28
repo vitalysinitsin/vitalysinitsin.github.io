@@ -1,7 +1,7 @@
-function Navbar({ className, children }) {
+function Navbar({ children }) {
   return (
-    <header className="flex h-20 w-screen items-center">
-      <div className="flex h-fit w-full justify-around items-end overflow-hidden relative">
+    <header className="flex w-screen items-center ">
+      <div className="flex h-fit w-full justify-around items-end">
         {children}
       </div>
     </header>

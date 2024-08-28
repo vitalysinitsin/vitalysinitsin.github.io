@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Navmenu from "./components/Navmenu";
-import Main from "./components/Main";
+import AboutMe from "./components/AboutMe";
 import Button from "./components/Button";
 import Title from "./components/Title";
 
@@ -14,7 +14,10 @@ function App() {
           <Button buttonStyle="plain">PROJECTS</Button>
         </Navmenu>
       </Navbar>
-      <Main></Main>
+      <main>
+        <div className="fixed h-full w-2/5 bg-[#E7DBCF] z-[-10]"></div>
+        <AboutMe></AboutMe>
+      </main>
       <footer></footer>
     </div>
   );
