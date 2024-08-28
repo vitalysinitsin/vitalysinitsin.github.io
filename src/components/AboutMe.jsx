@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function AboutMe() {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] auto-rows-max my-0 mx-auto max-w-2xl overflow-hidden shadow-lg">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] auto-rows-max my-0 mx-auto max-w-2xl overflow-hidden shadow-lg">
       <div className="bg-[#F4ECE6] flex flex-col p-4 gap-4">
         <img
           className="mx-auto h-40 w-40 rounded-full"
