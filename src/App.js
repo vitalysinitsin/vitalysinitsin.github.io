@@ -6,7 +6,7 @@ import Title from "./components/Title";
 
 function App() {
   return (
-    <div className="h-dvh grid grid-rows-[5rem_1fr_5rem]">
+    <div className="grid grid-rows-[5rem_1fr_5rem] min-h-full">
       <Navbar>
         <Title>Vitaly Sinitsin</Title>
         <Navmenu>
@@ -14,10 +14,8 @@ function App() {
           <Button buttonStyle="plain">PROJECTS</Button>
         </Navmenu>
       </Navbar>
-      <main>
-        <div className="fixed h-full w-2/5 bg-[#E7DBCF] z-[-10]"></div>
-        <AboutMe></AboutMe>
-      </main>
+      <div className="absolute h-full w-2/5 bg-[#E7DBCF] z-[-10]"></div>
+      <AboutMe></AboutMe>
       <footer></footer>
     </div>
   );
