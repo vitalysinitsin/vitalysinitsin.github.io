@@ -1,5 +1,6 @@
-import myPhoto from "../assets/me.jpg";
-import Button from "./Button";
+import myPhoto from "../../assets/me.jpg";
+import Button from "../utility/Button";
+import vitalySinitsinResumeSoftwareDev from "../../assets/vitalySinitsinResumeSoftwareDev.pdf";
 
 function AboutMe() {
   return (
@@ -21,10 +22,19 @@ function AboutMe() {
         <span className="text-7xl font-extrabold">Hello!</span>
         <span className="text-lg">Here's who I am & what I do</span>
         <div className="flex gap-4">
-          <Button>RESUME</Button>
-          <Button buttonStyle="outline">PROJECTS</Button>
+          <Button>
+            <a
+              href={vitalySinitsinResumeSoftwareDev}
+              download="vitalySinitsinResumeSoftwareDev.pdf"
+            >
+              RESUME
+            </a>
+          </Button>
+          <Button buttonStyle="outline">
+            <a href="https://www.github.com/hungryvito">GITHUB</a>
+          </Button>
         </div>
-        <p className="font-light ">
+        <p>
           I'm a software developer dedicated to creating effective and impactful
           software solutions. My experience includes launching several web
           applications in the environmental sector and developing a public
