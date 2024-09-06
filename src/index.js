@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutMe from "./components/pages/AboutMe";
 import Projects from "./components/pages/Projects";
 import reportWebVitals from "./reportWebVitals";
+import { IconContext } from "react-icons";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <IconContext.Provider value={{ size: "2rem" }}>
+      <RouterProvider router={router} />
+    </IconContext.Provider>
   </React.StrictMode>
 );
 
