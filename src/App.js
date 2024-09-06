@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="grid grid-rows-[5rem_1fr_5rem] min-h-full">
+    <div className="grid grid-rows-[5rem_1fr_5rem] min-h-full gap-4">
       <Navbar />
       <div className="absolute h-full w-2/5 bg-[#E7DBCF] z-[-10]"></div>
       <Outlet />

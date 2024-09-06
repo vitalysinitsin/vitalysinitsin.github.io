@@ -1,17 +1,17 @@
-import { ButtonLink } from "./Button";
+import { ButtonRouterLink } from "./Button";
 import Title from "./Title";
 
 function Navbar() {
   return (
-    <header className="flex bg-white justify-around overflow-hidden">
+    <header className="flex bg-white justify-around overflow-hidden shadow-sm">
       <Title />
       <ul className="flex">
-        <ButtonLink to="/dev" buttonStyle="plain">
+        <ButtonRouterLink to="/dev" buttonStyle="plain">
           ABOUT ME
-        </ButtonLink>
-        <ButtonLink to="/dev/projects" buttonStyle="plain">
+        </ButtonRouterLink>
+        <ButtonRouterLink to="/dev/projects" buttonStyle="plain">
           PROJECTS
-        </ButtonLink>
+        </ButtonRouterLink>
       </ul>
     </header>
   );

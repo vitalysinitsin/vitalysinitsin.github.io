@@ -1,5 +1,9 @@
 function Projects() {
-  return <div>Projects ***Work in progress***</div>;
+  return (
+    <div className="grid ">
+      <span>Work in progress</span>
+    </div>
+  );
 }
 
 export default Projects;
