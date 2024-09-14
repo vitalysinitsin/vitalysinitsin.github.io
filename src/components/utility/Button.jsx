@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { Link } from "react-router-dom";
 
 const options = {
   default:
@@ -7,13 +6,14 @@ const options = {
   outline:
     "h-8 px-8 from-transparent rounded-3xl font-bold text-sm border border-black",
   plain: "h-full px-[1rem] hover:bg-blue-50",
+  link: "w-max text-gray-500 border-b-2 border-gray-500 hover:cursor-pointer hover:font-bold hover:border-b-3 hover:border-gray-600 ",
 };
 
-function Button({ className, children, buttonStyle = "default" }) {
+function Button({ className, children, hidden, buttonStyle = "default" }) {
   return (
     <button
       className={classNames(
-        "flex items-center truncate",
+        `flex items-center truncate ${hidden && "hidden"}`,
         options[buttonStyle],
         className
       )}
@@ -23,40 +23,22 @@ function Button({ className, children, buttonStyle = "default" }) {
   );
 }
 
-export function ButtonRouterLink({
-  className,
-  children,
-  buttonStyle = "default",
-  ...rest
-}) {
-  return (
-    <Link
-      className={classNames(
-        "flex items-center truncate",
-        options[buttonStyle],
-        className
-      )}
-      {...rest}
-    >
-      {children}
-    </Link>
-  );
-}
-
 export function ButtonHyperLink({
   className,
   children,
+  hidden,
   buttonStyle = "default",
   ...rest
 }) {
   return (
     <a
       className={classNames(
-        "flex items-center truncate",
+        `flex items-center truncate ${hidden && "hidden"}`,
         options[buttonStyle],
         className
       )}
       {...rest}
+      target="_blank"
     >
       {children}
     </a>

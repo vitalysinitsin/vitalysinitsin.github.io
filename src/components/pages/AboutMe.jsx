@@ -3,11 +3,30 @@ import { ButtonHyperLink } from "../utility/Button";
 import vitalySinitsinResumeSoftwareDev from "../../assets/vitalySinitsinResumeSoftwareDev.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { PiPhoneCallDuotone, PiEnvelopeDuotone } from "react-icons/pi";
+import { MdFileDownload } from "react-icons/md";
+import Project from "../utility/Project";
+import { useEffect, useState } from "react";
 
 function AboutMe() {
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.github.com/users/hungryvito/repos")
+      .then((res) => res.json())
+      .then((allGithubRepos) => {
+        // excluding my course material
+        setRepos(
+          allGithubRepos
+            .filter((repo) => repo.name !== "courses")
+            .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+        );
+        console.log({ allGithubRepos });
+      });
+  }, []);
+
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(18rem,1fr))] auto-rows-max mx-auto max-w-2xl w-full h-max overflow-hidden shadow-lg">
-      <section className="bg-[#F4ECE6] flex flex-col pt-4 gap-4 justify-between">
+    <div className="flex flex-wrap mx-auto max-w-2xl w-full h-max overflow-hidden shadow-lg gap-y-2 justify-items-center">
+      <section className="w-full bg-[#F4ECE6] flex flex-col pt-4 gap-4 justify-between md:w-[20rem]">
         <img
           className="mx-auto h-40 w-40 rounded-full"
           src={myPhoto}
@@ -49,7 +68,7 @@ function AboutMe() {
           </a>
         </footer>
       </section>
-      <section className="flex items-start flex-col gap-8 p-4 bg-white">
+      <section className="flex w-full items-start flex-col gap-8 p-4 bg-white md:w-[20rem]">
         <span className="text-7xl font-extrabold">Hello!</span>
         <span className="text-lg">Here's who I am & what I do</span>
         <div className="flex gap-4">
@@ -57,9 +76,9 @@ function AboutMe() {
             href={vitalySinitsinResumeSoftwareDev}
             download="vitalySinitsinResumeSoftwareDev.pdf"
           >
-            RESUME
+            <MdFileDownload size="20" className="mr-1" />
+            <span>RESUME</span>
           </ButtonHyperLink>
-          {/* <Button buttonStyle="outline">CONTACT</Button> */}
         </div>
         <p>
           I'm a software developer dedicated to creating effective and impactful
@@ -67,6 +86,22 @@ function AboutMe() {
           applications in the environmental sector and developing a public
           safety platform that has aided police officers globally.
         </p>
+      </section>
+      <section className="p-3 bg-white border-t w-full">
+        <span className="py-1 text-2xl font-extrabold">Projects</span>
+        <div className="w-full h-1 bg-green-500 my-4" alt="greenLine"></div>
+        <div className="flex flex-wrap gap-2">
+          {repos.map(
+            (repo, index) => index < 4 && <Project repo={repo} key={repo.id} />
+          )}
+        </div>
+        <ButtonHyperLink
+          buttonStyle="link"
+          href="https://github.com/hungryvito?tab=repositories"
+          hidden={repos?.length < 5}
+        >
+          More...
+        </ButtonHyperLink>
       </section>
     </div>
   );
