@@ -20,7 +20,6 @@ function AboutMe() {
             .filter((repo) => repo.name !== "courses")
             .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
         );
-        console.log({ allGithubRepos });
       });
   }, []);
 
