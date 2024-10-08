@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/dev/static/css/main.0fd6d4bb.css",
-    "main.js": "/dev/static/js/main.7680d34b.js",
+    "main.js": "/dev/static/js/main.25b95216.js",
     "static/js/453.b8e3504e.chunk.js": "/dev/static/js/453.b8e3504e.chunk.js",
     "static/media/me.jpg": "/dev/static/media/me.cd6db59731b59ceae276.jpg",
     "static/media/coolvetica rg.otf": "/dev/static/media/coolvetica rg.3d81d0e1fdbd5f69b232.otf",
-    "static/media/vitalySinitsinResume.pdf": "/dev/static/media/vitalySinitsinResume.cd01ca57798925b3e57f.pdf",
+    "static/media/vitalySinitsinResume.pdf": "/dev/static/media/vitalySinitsinResume.2c2650cf4705bc30895c.pdf",
     "index.html": "/dev/index.html",
     "static/media/CanadianFlag.svg": "/dev/static/media/CanadianFlag.259890dcc467e7b2f6b7ccbffd182c9e.svg",
     "main.0fd6d4bb.css.map": "/dev/static/css/main.0fd6d4bb.css.map",
-    "main.7680d34b.js.map": "/dev/static/js/main.7680d34b.js.map",
+    "main.25b95216.js.map": "/dev/static/js/main.25b95216.js.map",
     "453.b8e3504e.chunk.js.map": "/dev/static/js/453.b8e3504e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd6d4bb.css",
-    "static/js/main.7680d34b.js"
+    "static/js/main.25b95216.js"
   ]
 }
