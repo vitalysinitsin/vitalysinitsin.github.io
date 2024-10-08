@@ -2,7 +2,7 @@ import myPhoto from "../../assets/me.jpg";
 import { ButtonHyperLink } from "../utility/Button";
 import resume from "../../assets/vitalySinitsinResume.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { PiPhoneCallDuotone, PiEnvelopeDuotone } from "react-icons/pi";
+import { PiEnvelopeDuotone } from "react-icons/pi";
 import { MdFileDownload } from "react-icons/md";
 import Project from "../utility/Project";
 import { useEffect, useState } from "react";
@@ -40,9 +40,6 @@ function AboutMe() {
           SOFTWARE DEVELOPER
         </span>
         <footer className="flex items-center justify-center gap-6 bg-white w-full h-14">
-          <a href="tel:+16479073762" title="Call me @ +16479073762">
-            <PiPhoneCallDuotone color="green" />
-          </a>
           <a
             href="mailto:vsinitsin94@gmail.com"
             title="Email me @ vsinitsin94@gmail.com"

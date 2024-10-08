@@ -1,5 +1,5 @@
 import Navbar from "./components/utility/Navbar";
-import { PiPhoneCallDuotone, PiEnvelopeDuotone } from "react-icons/pi";
+import { PiEnvelopeDuotone } from "react-icons/pi";
 import CanadianFlag from "./assets/CanadianFlag.svg";
 import AboutMe from "./components/pages/AboutMe";
 
@@ -10,10 +10,6 @@ function App() {
       <div className="absolute h-full w-2/5 bg-[#E7DBCF] -z-20"></div>
       <AboutMe />
       <footer className="bg-white flex justify-end h-max p-1 w-full flex-wrap gap-x-2 gap-y-0 col-span-full border-t mt-4 absolute bottom-0 text-sm font-bold">
-        <div className="flex items-center">
-          <PiPhoneCallDuotone size="1rem" />
-          <span>+16479073762</span>
-        </div>
         <div className="flex items-center">
           <PiEnvelopeDuotone size="1rem" />
           <span>vsinitsin94@gmail.com</span>
