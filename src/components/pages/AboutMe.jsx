@@ -1,6 +1,6 @@
 import myPhoto from "../../assets/me.jpg";
 import { ButtonHyperLink } from "../utility/Button";
-import resume from "../../assets/vitalySinitsinResume.pdf";
+import resume from "../../assets/vitalySinitsinResume_.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { PiEnvelopeDuotone } from "react-icons/pi";
 import { MdFileDownload } from "react-icons/md";
@@ -70,7 +70,7 @@ function AboutMe() {
         <div className="flex gap-4">
           <ButtonHyperLink
             href={resume}
-            download="vitalySinitsinResumeSoftwareDev.pdf"
+            download="vitalySinitsinResumeSoftwareDev_.pdf"
           >
             <MdFileDownload size="20" className="mr-1" />
             <span>RESUME</span>
