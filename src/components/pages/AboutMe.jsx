@@ -1,6 +1,6 @@
 import myPhoto from "../../assets/me.jpg";
 import { ButtonHyperLink } from "../utility/Button";
-import resume from "../../assets/vitalySinitsinResume_.pdf";
+import resume from "../../assets/vitalySinitsinResume.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { PiEnvelopeDuotone } from "react-icons/pi";
 import { MdFileDownload } from "react-icons/md";
@@ -11,7 +11,7 @@ function AboutMe() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/hungryvito/repos")
+    fetch("https://api.github.com/users/vitalysinitsin/repos")
       .then((res) => res.json())
       .then((allGithubRepos) => {
         // excluding my course material
@@ -40,14 +40,11 @@ function AboutMe() {
           SOFTWARE DEVELOPER
         </span>
         <footer className="flex items-center justify-center gap-6 bg-white w-full h-14">
-          <a
-            href="mailto:vsinitsin94@gmail.com"
-            title="Email me @ vsinitsin94@gmail.com"
-          >
+          <a href="mailto:vsinitsin94@gmail.com" title="vsinitsin94@gmail.com">
             <PiEnvelopeDuotone color="#CE3C30" />
           </a>
           <a
-            href="https://www.linkedin.com/in/vsinitsin/"
+            href="https://www.linkedin.com/in/vitalysinitsin/"
             target="_blank"
             rel="noreferrer"
             title="My Linkedin"
@@ -55,7 +52,7 @@ function AboutMe() {
             <FaLinkedin color="#0A66C2" />
           </a>
           <a
-            href="https://www.github.com/hungryvito"
+            href="https://www.github.com/vitalysinitsin"
             target="_blank"
             rel="noreferrer"
             title="My Github"
@@ -68,10 +65,7 @@ function AboutMe() {
         <span className="text-7xl font-extrabold">Hello!</span>
         <span className="text-lg">Here's who I am & what I do</span>
         <div className="flex gap-4">
-          <ButtonHyperLink
-            href={resume}
-            download="vitalySinitsinResumeSoftwareDev_.pdf"
-          >
+          <ButtonHyperLink href={resume} download="vitalySinitsinResume.pdf">
             <MdFileDownload size="20" className="mr-1" />
             <span>RESUME</span>
           </ButtonHyperLink>
@@ -93,7 +87,7 @@ function AboutMe() {
         </div>
         <ButtonHyperLink
           buttonStyle="link"
-          href="https://github.com/hungryvito?tab=repositories"
+          href="https://github.com/vitalysinitsin?tab=repositories"
           hidden={repos?.length < 5}
         >
           More...

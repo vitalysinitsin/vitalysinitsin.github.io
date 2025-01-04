@@ -1,3 +1,3 @@
-  My personal [web page](https://hungryvito.github.io/dev/).
+My personal [web page](https://vitalysinitsin.github.io).
 
-*WIP*
+_WIP_ personal blog is on the way!
