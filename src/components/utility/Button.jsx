@@ -5,8 +5,8 @@ const options = {
     "h-8 px-6 flex min-w-max bg-blue-500 rounded-3xl font-bold text-sm text-white",
   outline:
     "h-8 px-8 from-transparent rounded-3xl font-bold text-sm border border-black",
-  plain: "h-full px-[1rem] hover:bg-blue-50",
-  link: "w-max text-gray-500 border-b-2 border-gray-500 hover:cursor-pointer hover:font-bold hover:border-b-3 hover:border-gray-600 ",
+  plain: "h-full",
+  link: "w-max border-b-2 text-blue-600 border-blue-600 hover:cursor-pointer hover:text-blue-400 hover:border-blue-300",
 };
 
 function Button({ className, children, hidden, buttonStyle = "default" }) {

@@ -4,11 +4,11 @@ import AboutMe from "./components/pages/AboutMe";
 
 function App() {
   return (
-    <div className="grid grid-rows-[5rem_1fr_2rem] min-h-full gap-4">
+    <div className="grid grid-rows-[5rem_1fr_2rem] h-screen overflow-hidden">
       <Navbar />
       <div className="absolute h-full w-2/5 bg-[#E7DBCF] -z-20"></div>
       <AboutMe />
-      <footer className="bg-white flex justify-end h-max p-1 w-full flex-wrap gap-x-2 gap-y-0 col-span-full border-t mt-4 absolute bottom-0 text-sm font-bold">
+      <footer className="bg-white flex justify-end p-1 w-full flex-wrap gap-x-2 border-t text-sm font-bold">
         <div className="flex items-center">
           <span>vsinitsin94@gmail.com</span>
         </div>
