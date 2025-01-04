@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.0fd6d4bb.css",
-    "main.js": "/dev/static/js/main.a404a7d3.js",
-    "static/js/453.b8e3504e.chunk.js": "/dev/static/js/453.b8e3504e.chunk.js",
-    "static/media/me.jpg": "/dev/static/media/me.cd6db59731b59ceae276.jpg",
-    "static/media/coolvetica rg.otf": "/dev/static/media/coolvetica rg.3d81d0e1fdbd5f69b232.otf",
-    "static/media/vitalySinitsinResume_.pdf": "/dev/static/media/vitalySinitsinResume_.1f39d35a61e3b31fd28f.pdf",
-    "index.html": "/dev/index.html",
-    "static/media/CanadianFlag.svg": "/dev/static/media/CanadianFlag.259890dcc467e7b2f6b7ccbffd182c9e.svg",
-    "main.0fd6d4bb.css.map": "/dev/static/css/main.0fd6d4bb.css.map",
-    "main.a404a7d3.js.map": "/dev/static/js/main.a404a7d3.js.map",
-    "453.b8e3504e.chunk.js.map": "/dev/static/js/453.b8e3504e.chunk.js.map"
+    "main.css": "/static/css/main.77f20c89.css",
+    "main.js": "/static/js/main.03bf02d7.js",
+    "static/js/453.b8e3504e.chunk.js": "/static/js/453.b8e3504e.chunk.js",
+    "static/media/me.jpg": "/static/media/me.cd6db59731b59ceae276.jpg",
+    "static/media/coolvetica rg.otf": "/static/media/coolvetica rg.3d81d0e1fdbd5f69b232.otf",
+    "static/media/vitalySinitsinResume.pdf": "/static/media/vitalySinitsinResume.dda741e76bc9f40a327d.pdf",
+    "index.html": "/index.html",
+    "static/media/CanadianFlag.svg": "/static/media/CanadianFlag.259890dcc467e7b2f6b7ccbffd182c9e.svg",
+    "main.77f20c89.css.map": "/static/css/main.77f20c89.css.map",
+    "main.03bf02d7.js.map": "/static/js/main.03bf02d7.js.map",
+    "453.b8e3504e.chunk.js.map": "/static/js/453.b8e3504e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fd6d4bb.css",
-    "static/js/main.a404a7d3.js"
+    "static/css/main.77f20c89.css",
+    "static/js/main.03bf02d7.js"
   ]
 }
