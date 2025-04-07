@@ -1,4 +1,4 @@
-function Title({ children }) {
+function Title() {
   return (
     <div className={"ml-3 overflow-hidden truncate text-nowrap"}>
       <span className="text-2xl font-extrabold leading-[4.5rem]">
