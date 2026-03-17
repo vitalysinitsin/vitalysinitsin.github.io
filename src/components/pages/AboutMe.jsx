@@ -1,11 +1,15 @@
 import myPhoto from "../../assets/me.jpg";
 import { ButtonHyperLink } from "../utility/Button";
-import resume from "../../assets/vitalySinitsinResume.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { PiEnvelopeDuotone } from "react-icons/pi";
-import { MdFileDownload } from "react-icons/md";
 import Project from "../utility/Project";
 import { useEffect, useState } from "react";
+
+const EXCLUDED_REPOS = [
+  "courses",
+  "vitalysinitsin.github.io",
+  "vitalysinitsin",
+];
 
 function AboutMe() {
   const [repos, setRepos] = useState([]);
@@ -17,8 +21,8 @@ function AboutMe() {
         // excluding my course material
         setRepos(
           allGithubRepos
-            .filter((repo) => repo.name !== "courses")
-            .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+            .filter((repo) => !EXCLUDED_REPOS.includes(repo.name))
+            .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at)),
         );
       });
   }, []);
@@ -70,12 +74,6 @@ function AboutMe() {
         <section className="flex w-full items-start flex-col gap-8 p-4 bg-white md:w-[20rem]">
           <span className="text-7xl font-extrabold">Hello!</span>
           <span className="text-lg">Here's who I am & what I do</span>
-          <div className="flex gap-4">
-            <ButtonHyperLink href={resume} download="vitalySinitsinResume.pdf">
-              <MdFileDownload size="20" className="mr-1" />
-              <span>RESUME</span>
-            </ButtonHyperLink>
-          </div>
           <p>
             I'm a software developer dedicated to creating effective and
             impactful software solutions. My experience includes launching
@@ -84,12 +82,12 @@ function AboutMe() {
           </p>
         </section>
         <section className="p-3 bg-white border-t w-full">
-          <span className="py-1 text-2xl font-extrabold">Projects</span>
-          <div className="w-full h-1 bg-purple-300 my-4" alt="titleLine"></div>
-          <div className="flex flex-wrap gap-2 ">
+          <span className="text-2xl font-extrabold">Personal Projects</span>
+          <div className="w-full h-1 bg-purple-300 my-2" alt="titleLine"></div>
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-2">
             {repos.map(
               (repo, index) =>
-                index < 4 && <Project repo={repo} key={repo.id} />
+                index < 4 && <Project repo={repo} key={repo.id} />,
             )}
           </div>
           <ButtonHyperLink

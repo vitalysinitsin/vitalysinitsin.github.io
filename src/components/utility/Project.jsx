@@ -1,5 +1,4 @@
 import { ButtonHyperLink } from "./Button";
-import { FiExternalLink } from "react-icons/fi";
 
 function Project({ repo }) {
   const renderDemoLink = repo?.homepage && (
@@ -8,35 +7,38 @@ function Project({ repo }) {
       href={repo.homepage}
       className="flex gap-1"
     >
-      <FiExternalLink size="15" />
       <span>demo</span>
     </ButtonHyperLink>
   );
 
   return (
-    <div className="h-[9rem] w-[calc(50%-5px)] overflow-hidden border-b-2 border-gray-200">
-      <div className="flex flex-wrap justify-between items-center pr-4 ">
-        <p className="truncate">{repo.name}</p>
-        <div className="flex text-sm">
+    <div className="flex flex-col gap-2 h-[9rem] overflow-hidden border-b-2 border-r-2 border-gray-200 p-1">
+      <div className="flex justify-between items-center">
+        <p className="font-semibold truncate">{repo.name}</p>
+        <span className="text-sm">
+          {new Date(repo.pushed_at).getFullYear()}
+        </span>
+      </div>
+      <div className="flex justify-between items-center">
+        <div className="flex text-sm gap-2">
           {renderDemoLink}
           <ButtonHyperLink
             buttonStyle="link"
             href={repo.html_url}
-            className="flex justify-between gap-1 ml-2"
+            className="flex justify-between gap-1"
           >
-            <FiExternalLink size="15" />
             <span>github</span>
           </ButtonHyperLink>
         </div>
       </div>
-      <span className="text-sm">{new Date(repo.pushed_at).getFullYear()}</span>
       <p
-        className="mt-2 text-sm overflow-hidden text-ellipsis"
+        className="text-sm overflow-hidden text-ellipsis"
         // credit for a multiline ellipsis idea below goes to: https://stackoverflow.com/a/41137262
         style={{
           display: "-webkit-box",
-          WebkitLineClamp: "3",
+          WebkitLineClamp: "4",
           WebkitBoxOrient: "vertical",
+          lineHeight: "1.2",
         }}
       >
         {repo.description}
