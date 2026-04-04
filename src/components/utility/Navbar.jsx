@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header className="flex bg-white justify-between items-center overflow-hidden shadow-sm px-2">
       <Title />
-      <nav className="flex shrink-0 items-center gap-1">
+      <nav className="shrink-0 items-center gap-1 hidden md:flex">
         <NavLink to="/" end className="">
           About me
         </NavLink>
