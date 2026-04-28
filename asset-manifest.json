@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b9c0ed5.css",
-    "main.js": "/static/js/main.462dabaf.js",
+    "main.css": "/static/css/main.4690c955.css",
+    "main.js": "/static/js/main.db918fd1.js",
     "static/js/453.b8e3504e.chunk.js": "/static/js/453.b8e3504e.chunk.js",
     "static/media/me.jpg": "/static/media/me.cd6db59731b59ceae276.jpg",
     "static/media/coolvetica rg.otf": "/static/media/coolvetica rg.3d81d0e1fdbd5f69b232.otf",
     "index.html": "/index.html",
     "static/media/CanadianFlag.svg": "/static/media/CanadianFlag.259890dcc467e7b2f6b7ccbffd182c9e.svg",
-    "main.7b9c0ed5.css.map": "/static/css/main.7b9c0ed5.css.map",
-    "main.462dabaf.js.map": "/static/js/main.462dabaf.js.map",
+    "main.4690c955.css.map": "/static/css/main.4690c955.css.map",
+    "main.db918fd1.js.map": "/static/js/main.db918fd1.js.map",
     "453.b8e3504e.chunk.js.map": "/static/js/453.b8e3504e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b9c0ed5.css",
-    "static/js/main.462dabaf.js"
+    "static/css/main.4690c955.css",
+    "static/js/main.db918fd1.js"
   ]
 }
