@@ -74,11 +74,11 @@ function AboutMe() {
         <section className="flex w-full items-start flex-col gap-8 p-4 bg-white md:w-[20rem]">
           <span className="text-7xl font-extrabold">Hello!</span>
           <span className="text-lg">Here's who I am & what I do</span>
-          <p>
-            I'm a software developer dedicated to creating effective and
-            impactful software solutions. My experience includes launching
-            several web applications in the environmental sector and developing
-            a public safety platform that has aided police officers globally.
+          <p className="">
+            I'm a Software Engineer with over 6 years of experience building
+            scalable and responsive web applications. Skilled in designing
+            reusable UI components, managing application state, and developing
+            robust server-side logic to support performant, end-to-end systems.
           </p>
         </section>
         <section className="p-3 bg-white border-t w-full">
