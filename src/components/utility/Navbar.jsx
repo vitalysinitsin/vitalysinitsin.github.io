@@ -8,14 +8,14 @@ function Navbar() {
   return (
     <header className="flex h-full min-h-0 items-center justify-between overflow-hidden bg-white shadow-sm">
       <Title />
-      <nav className="hidden h-full shrink-0 items-stretch text-lg font-bold md:flex">
+      {/* <nav className="hidden h-full shrink-0 items-stretch text-lg font-bold md:flex">
         <NavLink to="/" end className={navLinkClass}>
           About me
         </NavLink>
         <NavLink to="/portfolio" className={navLinkClass}>
           Portfolio
         </NavLink>
-      </nav>
+      </nav> */}
     </header>
   );
 }
