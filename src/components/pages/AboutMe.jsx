@@ -29,7 +29,7 @@ function AboutMe() {
 
   return (
     <div className="overflow-auto">
-      <div className="flex w-full my-2 max-w-2xl mx-auto flex-wrap gap-2 justify-items-center shadow-lg">
+      <div className="flex w-full my-2 max-w-2xl mx-auto flex-wrap gap-2 justify-between shadow-lg">
         <section className="w-full bg-[#F4ECE6] flex flex-col pt-4 gap-4 justify-between md:w-[20rem]">
           <img
             className="mx-auto h-40 w-40 rounded-full"
@@ -75,10 +75,8 @@ function AboutMe() {
           <span className="text-7xl font-extrabold">Hello!</span>
           <span className="text-lg">Here's who I am & what I do</span>
           <p className="">
-            I'm a Software Engineer with over 6 years of experience building
-            scalable and responsive web applications. Skilled in designing
-            reusable UI components, managing application state, and developing
-            robust server-side logic to support performant, end-to-end systems.
+            Software Developer with over six years of experience specializing in
+            web applications. I'm a foodie and I love movies.
           </p>
         </section>
         <section className="p-3 bg-white border-t w-full">
