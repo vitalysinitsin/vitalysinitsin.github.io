@@ -75,8 +75,25 @@ function AboutMe() {
           <span className="text-7xl font-extrabold">Hello!</span>
           <span className="text-lg">Here's who I am & what I do</span>
           <p className="">
-            Software Developer with over six years of experience specializing in
-            web applications. I'm a foodie and I love movies.
+            I'm a Software Developer specializing in building web applications.
+            I enjoy contributing to products that solve real problems in a
+            clear, user-focused way. <br />
+            <br /> Outside of work, I spend time with my
+            <span className="relative inline-block group font-bold text-blue-500 cursor-pointer">
+              {" "}
+              cats
+              <span
+                role="tooltip"
+                className="absolute bottom-full left-0 right-0 z-10 mb-1 flex justify-center opacity-0 pointer-events-none transition-opacity group-hover:opacity-100"
+              >
+                <span className="border border-gray-400 whitespace-nowrap rounded bg-gray-300 px-2 py-1 font-normal text-black">
+                  <span className="text-gray-800 font-bold">Pepperoni</span>,{" "}
+                  <span className="text-yellow-700 font-bold">Coco</span>, and{" "}
+                  <span className="text-orange-400 font-bold">Louie</span>
+                </span>
+              </span>
+            </span>
+            , exploring new food spots, and watching movies.
           </p>
         </section>
         <section className="p-3 bg-white border-t w-full">
