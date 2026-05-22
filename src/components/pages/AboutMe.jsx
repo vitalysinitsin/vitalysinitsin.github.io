@@ -78,18 +78,17 @@ function AboutMe() {
             I'm a Software Developer specializing in building web applications.
             I enjoy contributing to products that solve real problems in a
             clear, user-focused way. <br />
-            <br /> Outside of work, I spend time with my
+            <br /> Outside of work, I spend time with my{" "}
             <span className="relative inline-block group font-bold text-blue-500 cursor-pointer">
-              {" "}
               cats
               <span
                 role="tooltip"
-                className="absolute bottom-full left-0 right-0 z-10 mb-1 flex justify-center opacity-0 pointer-events-none transition-opacity group-hover:opacity-100"
+                className="absolute bottom-full left-1/2 z-10 mb-1 w-max -translate-x-1/2 opacity-0 pointer-events-none transition-opacity group-hover:opacity-100"
               >
-                <span className="border border-gray-400 whitespace-nowrap rounded bg-gray-300 px-2 py-1 font-normal text-black">
-                  <span className="text-gray-800 font-bold">Pepperoni</span>,{" "}
-                  <span className="text-yellow-700 font-bold">Coco</span>, and{" "}
-                  <span className="text-orange-400 font-bold">Louie</span>
+                <span className="block rounded border border-gray-400 bg-gray-300 px-2 py-1 font-normal text-black">
+                  <div className="text-gray-800 font-bold">Pepperoni</div>
+                  <div className="text-yellow-700 font-bold">Coco</div>
+                  <div className="text-orange-400 font-bold">Louie</div>
                 </span>
               </span>
             </span>
