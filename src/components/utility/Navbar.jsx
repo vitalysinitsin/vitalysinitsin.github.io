@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Title from "./Title";
 
-const navLinkClass =
-  "flex h-full items-center text-nowrap px-4 text-lg font-bold cursor-pointer hover:bg-gray-100 hover:box-shadow-md transition-all duration-300";
+// const navLinkClass =
+//   "flex h-full items-center text-nowrap px-4 text-lg font-bold cursor-pointer hover:bg-gray-100 hover:box-shadow-md transition-all duration-300";
 
 function Navbar() {
   return (
