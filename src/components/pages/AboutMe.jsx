@@ -96,7 +96,7 @@ function AboutMe() {
           </p>
         </section>
         <section className="p-3 bg-white border-t w-full">
-          <span className="text-2xl font-extrabold">Latest Projects</span>
+          <span className="text-2xl font-extrabold">Latest Contributions</span>
           <div className="w-full h-1 bg-purple-300 my-2" alt="titleLine"></div>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(18rem,1fr))] gap-2">
             {repos.map(
