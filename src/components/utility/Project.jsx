@@ -1,3 +1,4 @@
+import { GoRepoForked } from "react-icons/go";
 import { ButtonHyperLink } from "./Button";
 
 function formatLastUpdated(isoDate) {
@@ -19,7 +20,16 @@ function Project({ repo }) {
   return (
     <div className="flex flex-col gap-2 h-[9rem] overflow-hidden border-b-2 border-r-2 border-gray-200 p-1">
       <div className="flex justify-between items-center">
-        <p className="font-semibold truncate">{repo.name}</p>
+        <p className="font-semibold flex items-center gap-1 min-w-0">
+          <span className="truncate">{repo.name}</span>
+          {repo.fork && (
+            <GoRepoForked
+              className="shrink-0 text-gray-500"
+              size={14}
+              aria-label="Forked repository"
+            />
+          )}
+        </p>
         <span className="text-sm whitespace-nowrap">
           Last Updated: {formatLastUpdated(repo.pushed_at)}
         </span>
